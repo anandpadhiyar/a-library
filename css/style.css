@@ -1,0 +1,429 @@
+body {
+    font-family: 'Crimson Text', serif;
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: cen;
+    align-items: center; 
+    font-family: 'Cinzel', serif;
+}
+.toleft {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.logo {
+    padding: 0;
+    width: 18%;
+}
+.logo img {
+    color: black;
+    width: 30%;
+    display: block;
+    margin: auto;
+    min-width: 55px;
+}
+.nav-items ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.nav-items li {
+    list-style: none;
+}
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 3px 21px;
+}
+.nav-items a:hover, .nav-items a.active {
+    color: #ff7b54;
+}
+.toright {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+.toright input {
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 4px 12px;
+    font-size: 1 rem;
+    font-size: 1.05rem;
+    background: transparent;
+}
+::placeholder {
+    color: gray;
+    font-family: 'Mulish', sans-serif;
+}
+.toright button {
+    background-color: transparent;
+    color: white;
+    padding: 5px 20px;
+    font-size: 1.05rem;
+    border: 0px;
+    cursor: pointer;
+}
+.welcome {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.welcome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ff7b54;
+    z-index: -1;
+    background: url('../images/books.jpg') center center no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+h1 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.2rem;
+}
+.form {
+    width: 40%;
+    border: 2px solid #ff7b54;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding-bottom: 35px;
+}
+.form h1 {
+    margin: 10px auto;
+}
+#book-enroll {
+    display: flex;
+    flex-direction: column;
+}
+
+#book-enroll input {
+    margin: 10px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid #ff7b54;
+    border-radius: 6px;
+    color: white;
+}
+.radio-buttons {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.radio-buttons .radio-button {
+    display: flex;
+    align-items: center;
+}
+
+#book-enroll label {
+    font-size: 1.2rem;
+}
+
+#book-enroll input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -6px;
+    left: -2px;
+    position: relative;
+    background-color: #ff7b54;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+#book-enroll button {
+    background-color: #ff7b54;
+    font-size: 1.2rem;
+    color: white;
+}
+.form-table {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+.data-table {
+    margin-top: 30px;
+}
+
+.books-details th, .books-details td {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+}
+.even {
+    background-color: gray;
+}
+
+/* .books-details tr:hover {background-color: #ddd;} */
+
+.books-details th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff7b54;
+    color: white;
+}
+
+.books-details button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+}
+.books-details button i {
+    color: #ff7b54;
+}
+
+
+#user-enroll {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-enroll input, textarea {
+    margin: 10px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid #ff7b54;
+    border-radius: 6px;
+    color: white;
+}
+#user-enroll .radio-buttons {
+    margin: 10px;
+}
+#user-enroll label {
+    font-size: 1.2rem;
+}
+
+#user-enroll input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -6px;
+    left: -2px;
+    position: relative;
+    background-color: #ff7b54;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+#user-enroll button {
+    background-color: #ff7b54;
+    font-size: 1.2rem;
+    color: white;
+}
+
+hr {
+    border: 1px solid #ff7b54;
+    margin-top: 40px;
+}
+.library-image {
+    text-align: center;
+    display: inline-block;
+    width: 37%;
+}
+.library-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.library-image .img {
+    position: relative;
+    width: 66%;
+    display: inline-block;
+}
+.user-form {
+    width: 40%;
+}
+
+footer {
+    margin-top: 50px;
+    position: relative;
+}
+
+footer::before{
+    position:absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff7b54;
+    z-index: -1;
+    opacity: 0.13;
+}
+
+.upper-part {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: left;
+}
+
+.contact-person {
+    margin: 10px 20px;
+    width: 60%;
+}
+.social-media-handles {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+footer .logo img, footer .logo h2 {
+    padding: 10px;
+}
+
+.social-media {
+    display: flex;
+}
+.social-media .s-item {
+    padding: 2px 5px;
+    margin: 2px 3px;
+    background-color: rgb(163, 157, 157);
+}
+.social-media .s-item i {
+    font-size: 1.2rem;
+    color: black;
+}
+
+@media (max-width: 1200px) {
+    .radio-buttons {
+        flex-direction: column;
+    }
+    .radio-buttons .radio-button {
+        margin: 2px 3px;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .form-table {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-table .form, .form-table .data-table {
+        width: 80%;
+    }
+    .form-table .data-table .books-details {
+        margin: auto;
+    }
+    .library-image {
+        text-align: center;
+        display: inline-block;
+        width: 85%;
+    }
+    .library-image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .library-image .img {
+        position: relative;
+        width: 85%;
+        display: inline-block;
+    }
+    footer .upper-part {
+        flex-direction: column;
+    }
+    footer .upper-part .social-media-handles {
+        margin: 10px auto;
+        width: 50%;
+    }
+    footer .logo img {
+        width: 21%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+
+}
+
+@media (max-width: 640px) {
+    footer .upper-part .contact-info {
+        flex-direction: column;
+        width: 66%;
+    }
+    footer .upper-part .social-media-handles {
+        width: 33%;
+    }
+    footer .upper-part {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 440px) {
+    .toleft {
+        flex-direction: column;
+    }
+    .toleft .logo {
+        text-align: right;
+    }
+    .form-table {
+        justify-content: center;
+    }
+    .form-table .form, .form-table .data-table {
+        width: 95%;
+        font-size: 1rem;
+    }
+    .form-table .data-table {
+        font-size: 1rem;
+    }
+    footer .upper-part .contact-info {
+        width: 95%;
+    }
+    footer .upper-part .social-media-handles {
+        width: 95%;
+    }
+    footer .upper-part {
+        flex-direction: column;
+    }
+    
+    .books-details th, .books-details td {
+        /* border: 1px solid #ddd; */
+        padding: 2px;
+    }
+    
+    
+    .books-details th {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    
+    .books-details button {
+        font-size: 1rem;
+    }
+    .nav-items a {
+        font-size: 1.1rem;
+        padding: 3px;
+    }   
+}

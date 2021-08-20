@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anand Library</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Crimson+Text:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="navbar">
+        <div class="toleft">
+          <div class="logo">
+            <img src="images/book.png" alt="logo" />
+          </div>
+          <div class="nav-items">
+            <ul>
+              <li><a href="" class="active">Overview</a></li>
+              <li><a href="">Issue Book</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="welcome">
+      <h1>Welcome to Anand's Library</h1>
+      <p>
+        This library is established in 1976 and from then we are serving you
+        with great books.
+      </p>
+      <p>
+        Books are very important in life it gives us different perspectives. It
+        also develops quality like pations, concentration in us.
+      </p>
+      <p>
+        If you want to deep down into books, we are best for you. We are having
+        best literatute, non-fiction, fiction, science books for you.
+      </p>
+    </section>
+    <section class="form-table">
+      <section class="form">
+        <h1>Add your book now!</h1>
+        <form action="" id="book-enroll">
+          <input type="text" id="bookName" placeholder="Book name" />
+          <input type="text" id="authorName" placeholder="Author name" />
+          <div class="radio-buttons">
+            <div class="radio-button">
+              <input
+                type="radio"
+                value="Fiction"
+                id="fiction"
+                name="book-type"
+                checked
+              />
+              <label for="fiction">Fiction</label>
+            </div>
+            <div class="radio-button">
+              <input
+                type="radio"
+                value="non-Fiction"
+                id="non-fiction"
+                name="book-type"
+              />
+              <label for="non-fiction">Non-Fiction</label>
+            </div>
+            <div class="radio-button">
+              <input
+                type="radio"
+                value="Literature"
+                id="literature"
+                name="book-type"
+              />
+              <label for="literature">Literature</label>
+            </div>
+            <div class="radio-button">
+              <input
+                type="radio"
+                value="Science"
+                id="science"
+                name="book-type"
+              />
+              <label for="science">Science</label>
+            </div>
+          </div>
+          <button id="addbook">Add!</button>
+        </form>
+      </section>
+      <section class="data-table">
+        <table class="books-details">
+          <thead>
+            <th>Book Name</th>
+            <th>Author Name</th>
+            <th>Genre</th>
+            <th>Delete</th>
+          </thead>
+          <!-- <tr>
+            <td>7 Habits of highly effective people</td>
+            <td>Brian Cox</td>
+            <td>Non-fiction</td>
+            <td><button class="book-delete"><i class="fa fa-minus-circle" aria-hidden="true"></i></button></td>
+          </tr> -->
+        </table>
+      </section>
+    </section>
+    <hr />
+    <section class="form-table">
+      <section class="form user-form">
+        <h1>Enroll now!</h1>
+        <form action="" id="user-enroll">
+          <input type="text" placeholder="Your name" />
+          <input type="text" placeholder="Your age" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="6"
+            placeholder="Address"
+          ></textarea>
+          <div class="radio-buttons">
+            <div class="radio-button">
+              <input
+                type="radio"
+                value="Male"
+                id="male"
+                name="gender"
+                checked
+              />
+              <label for="male">Male</label>
+            </div>
+            <div class="radio-button">
+              <input type="radio" value="Female" id="female" name="gender" />
+              <label for="female">Female</label>
+            </div>
+            <div class="radio-button">
+              <input type="radio" value="Other" id="other" name="gender" />
+              <label for="other">Other</label>
+            </div>
+          </div>
+          <button type="submit">Enroll!</button>
+        </form>
+      </section>
+      <section class="library-image">
+        <div class="img">
+          <img src="images/library-image.jpg" alt="" />
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="upper-part">
+        <div class="contact-info">
+          <div class="contact-person">
+            <p>Mr. R. R. Mishra</p>
+            <p>Head Custodian</p>
+            <p>+91 8976789876</p>
+          </div>
+          <div class="contact-person">
+            <p>Mr. R. K. Talwar</p>
+            <p>Asst. Custodian</p>
+            <p>+91 8967589887</p>
+          </div>
+          <div class="contact-person">
+            <p>Mr. A. K. Desai</p>
+            <p>Sr. Supervisor</p>
+            <p>+91 6754897653</p>
+          </div>
+        </div>
+        <div class="social-media-handles">
+          <div class="logo">
+            <img src="images/book.png" alt="" />
+
+            <h2>A's Library</h2>
+          </div>
+          <div class="social-media">
+            <div class="s-item">
+              <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <div class="s-item">
+              <a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="s-item">
+              <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="s-item">
+              <a href=""> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <div class="s-item">
+              <a href="">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower-part">
+        &copy; Master in spreadsheet all rights reserved
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
